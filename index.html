@@ -32,6 +32,7 @@
     .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;font-weight:600;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);transition:transform .06s ease, box-shadow .2s ease, background .2s ease}
     .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#0a0f1a;border:none}
+    .btn-ghost{background:rgba(255,255,255,.06)}
 
     .hero{padding:60px 0}
     .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
@@ -47,7 +48,7 @@
     .charts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .chart{background:#0c1528;border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:16px}
 
-    section{padding:50px 0} /* tighter spacing across sections */
+    section{padding:50px 0}
     .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .feature{background:linear-gradient(180deg,#101a30 0%,#0b1220 100%);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
     .feature h3{margin:8px 0 6px;font-size:18px}
@@ -62,17 +63,15 @@
 
     footer{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;color:var(--muted)}
 
-    @media (max-width:980px){
+    @media(max-width:980px){
       .hero-grid{grid-template-columns:1fr}
       .features, .how, .charts{grid-template-columns:1fr}
     }
     .support-fab{position:fixed;right:18px;bottom:18px;z-index:20}
-
-</style>
+  </style>
 </head>
 <body>
   <a class="btn btn-primary support-fab" href="mailto:trajectorymappilot@gmail.com?subject=TrajectoryMap%20Pilot%20Support&body=Hi%20TrajectoryMap%20team,%0A%0AMy%20question%3A%20...%0A%0AIf%20this%20is%20about%20a%20token%20or%20report,%20please%20paste%20your%20token%20and%20the%20email%20you%20used.%0A" aria-label="Contact support">Support</a>
-
   <header>
     <div class="container nav">
       <div class="brand">
@@ -210,14 +209,6 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
-      <div>© <span id="year"></span> TrajectoryMap. All rights reserved.</div>
-      <div>Built for pilot use. Not a medical diagnosis or clinical assessment.</div>
-    </div>
-  </footer>
-
-
   <section id="contact">
     <div class="container">
       <h2 style="margin-top:0">Contact & Support</h2>
@@ -240,6 +231,13 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div>© <span id="year"></span> TrajectoryMap. All rights reserved.</div>
+      <div>Built for pilot use. Not a medical diagnosis or clinical assessment.</div>
+    </div>
+  </footer>
 
   <script>
     const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfVGbqEfPwt_AaL4SM7alcLMG-qY6q3bYSQcHXXo5S8qh8g3w/viewform';
