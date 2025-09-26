@@ -66,9 +66,13 @@
       .hero-grid{grid-template-columns:1fr}
       .features, .how, .charts{grid-template-columns:1fr}
     }
-  </style>
+    .support-fab{position:fixed;right:18px;bottom:18px;z-index:20}
+
+</style>
 </head>
 <body>
+  <a class="btn btn-primary support-fab" href="mailto:trajectorymappilot@gmail.com?subject=TrajectoryMap%20Pilot%20Support&body=Hi%20TrajectoryMap%20team,%0A%0AMy%20question%3A%20...%0A%0AIf%20this%20is%20about%20a%20token%20or%20report,%20please%20paste%20your%20token%20and%20the%20email%20you%20used.%0A" aria-label="Contact support">Support</a>
+
   <header>
     <div class="container nav">
       <div class="brand">
@@ -79,6 +83,7 @@
         <a href="#how">How it works</a>
         <a href="#sample">Sample</a>
         <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
         <a class="btn btn-primary" href="#start" id="nav-cta">Start</a>
       </nav>
     </div>
@@ -179,6 +184,7 @@
         <p style="margin:0;color:var(--muted)">Pilot access is currently by invitation. If you have a promo code, enter it below to open the questionnaire.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
           <button class="btn btn-primary" id="promoBtn2" type="button">Enter promo code</button>
+          <a class="btn btn-ghost" href="mailto:trajectorymappilot@gmail.com?subject=TrajectoryMap%20Pilot%20Support&body=Hi%20TrajectoryMap%20team,%0A%0AMy%20question%3A%20...%0A%0AIf%20this%20is%20about%20a%20token%20or%20report,%20please%20paste%20your%20token%20and%20the%20email%20you%20used.%0A">Need help?</a>
         </div>
       </div>
     </div>
@@ -210,6 +216,30 @@
       <div>Built for pilot use. Not a medical diagnosis or clinical assessment.</div>
     </div>
   </footer>
+
+
+  <section id="contact">
+    <div class="container">
+      <h2 style="margin-top:0">Contact & Support</h2>
+      <div class="card" style="display:grid;gap:14px">
+        <p style="margin:0;color:var(--muted)">
+          Questions, token requests, or technical issues? Email us and we'll help.
+        </p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <a class="btn btn-primary" href="mailto:trajectorymappilot@gmail.com?subject=TrajectoryMap%20Pilot%20Support&body=Hi%20TrajectoryMap%20team,%0A%0AMy%20question%3A%20...%0A%0AIf%20this%20is%20about%20a%20token%20or%20report,%20please%20paste%20your%20token%20and%20the%20email%20you%20used.%0A">Email support</a>
+          <span style="color:var(--muted)">or write to <a href="mailto:trajectorymappilot@gmail.com">trajectorymappilot@gmail.com</a></span>
+        </div>
+        <details>
+          <summary>What to include for faster help</summary>
+          <ul style="margin:8px 0 0 18px; color:var(--muted)">
+            <li>Your promo token (if any)</li>
+            <li>The email address you used on the form</li>
+            <li>A short description of the issue</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
 
   <script>
     const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfVGbqEfPwt_AaL4SM7alcLMG-qY6q3bYSQcHXXo5S8qh8g3w/viewform';
